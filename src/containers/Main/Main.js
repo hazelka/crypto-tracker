@@ -8,7 +8,9 @@ import { useEffect, useState } from 'react';
 
 function Main() {
   const [top10Coins, setTop10Coins] = useState(sample);
-  const [browseHistory, setBrowseHistory] = useState(['btc-bitcoin']);
+  const [browseHistory, setBrowseHistory] = useState(
+    JSON.parse(localStorage.getItem('browseHistory')) || ['btc-bitcoin']
+  );
   const [detailID, setDetailID] = useState('btc-bitcoin');
 
   useEffect(() => {
@@ -46,6 +48,10 @@ function Main() {
     newHistory.splice(i, 1);
     setBrowseHistory(newHistory);
   }
+
+  useEffect(() => {
+    localStorage.setItem('browseHistory', JSON.stringify(browseHistory));
+  }, [browseHistory]);
 
   return ( 
     <main>
