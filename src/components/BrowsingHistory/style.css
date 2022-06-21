@@ -1,0 +1,57 @@
+#browsing-history {
+  width: 80%;
+  margin: auto;
+}
+
+#browsing-history h3 {
+  color: var(--blue);
+  font-size: 1.5rem;
+  letter-spacing: 0.25rem;
+  padding: 1rem 0;
+  border-bottom: 3px solid var(--blue);
+}
+
+.browing-history-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.browse-result {
+  min-width: 120px;
+  margin: 0.5rem 1rem;
+  border: 2px solid var(--blue);
+  background-color: var(--blue-25);
+  padding: 1rem 1rem 1rem 3rem;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px 0px var(--blue);
+  display: flex;
+  justify-content: space-between;
+}
+
+.browse-result-name {
+  color: var(--cyan);
+}
+
+.browse-result:hover {
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.browse-result-change {
+  display: inline-block;
+  text-align: right;
+  width: 80px;
+}
+
+.browse-result-delete {
+  color: gray;
+  background-color: none;
+  display: inline-block;
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 500px) {
+  .browse-result-change {
+    width: auto;
+  }
+}

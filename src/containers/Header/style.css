@@ -1,0 +1,19 @@
+header {
+  position: relative;
+}
+
+#header-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing: 0.5rem;
+}
+
+#header-title {
+  letter-spacing: 0.5rem;
+}
+
+#header-desc {
+  color: var(--cyan);
+}

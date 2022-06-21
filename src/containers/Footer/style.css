@@ -1,0 +1,6 @@
+footer {
+  text-align: center;
+  background-color: var(--dark-blue);
+  background: linear-gradient(180deg, rgba(12,8,34,1) 20%, rgba(50,33,111,1) 60%, rgba(90,59,192,1) 80%, rgba(56,94,226,1) 100%);
+  padding: 10rem;
+}

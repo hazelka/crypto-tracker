@@ -1,0 +1,5 @@
+main {
+  background-color: var(--dark-blue);
+  box-shadow: 0px -20px 0px 50px var(--dark-blue);
+}
+
